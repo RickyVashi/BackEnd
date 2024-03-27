@@ -10,7 +10,6 @@ const cors = require('cors');
 const secretKey = "NodeJS"
 const jwt = require('jsonwebtoken');
 const port = process.env.PORT || 1600;
-const ip = '192.168.50.108';
 
 connectToMongo();
 
@@ -94,7 +93,7 @@ app.use('/', book);
 
 
 
-app.listen(port, ip, () => {
+app.listen(port, () => {
   console.log(`Server is running on ${ip}:${port}`);
 });
 
