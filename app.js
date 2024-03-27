@@ -16,7 +16,6 @@ connectToMongo();
 
 var registerRouter = require('./routes/register');
 var forgotUser = require('./routes/forget');
-var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var addTask = require('./routes/project')
 var add = require('./routes/date')
@@ -86,7 +85,7 @@ app.use((req, res, next) => {
 
 app.use('/',registerRouter);
 app.use('/',forgotUser);
-app.use('/', indexRouter);
+
 app.use('/', usersRouter);
 app.use('/', addTask);
 app.use('/', add);
