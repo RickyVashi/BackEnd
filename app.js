@@ -94,7 +94,7 @@ app.use('/', book);
 
 
 app.listen(port, () => {
-  console.log(`Server is running on ${ip}:${port}`);
+  console.log(`Server is running on ${port}`);
 });
 
 module.exports = app;
