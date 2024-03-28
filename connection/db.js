@@ -9,6 +9,7 @@ const connectToMongo = () => {
     }).then(() => {
         console.log("Connection Done");
     }).catch((e) => {
+        console.log(e);
         console.log("No Connection");
     });
 }
